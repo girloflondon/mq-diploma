@@ -227,6 +227,10 @@ header {
 }
 
 /* active */
+.active {
+    margin: 0 auto;
+    max-width: 1920px;
+}
 
 .active-list {
     display: flex;
@@ -303,53 +307,55 @@ footer-title-box {
     }
 
     .header-logo{
-        width: 133px;
+        margin-top: 10%;
+        width: 140px;
     }
     
     .header-title-box {
         width: 87.5%;
+        margin-top: -75%;
     }
   
     .header-title {
-        font-size: 2.8rem;
-        letter-spacing: 1.5px;
+        font-size: 3.5rem;
+        letter-spacing: 0.5px;
     }
 
-    .header-line1 {
-        margin-bottom: 3.5vh;
+    .header-line2{
+        padding-top: 3rem;
     }
-    
+
+    header .header-btns {
+        margin-bottom: 22%;
+    }
+
     .btn {
         width: 100%;
         height: 35px;
         margin-bottom: 15px;
         padding: 0px;
         padding-left: 40%;
+        padding-bottom: 23px;
+        padding-top: 20px;
         font-size: 0.8rem;
     }
 
     .btn-apple {
         margin-right: 0px;
-        margin-bottom: 15px;
     }
   
     .apple-btn::before {
-        top: calc(50% - 20px/2);
-        left: 30%;
-        width: 20px;
-        height: 24px;
+        top: 9%;
+        left: 29%;
+        width: 30px;
+        height: 30px;
     }
 
     .google-btn::before {
-        top: calc(50% - 22px/2);
-        left: 30%;
-        width: 22px;
-        height: 24px;
-    }
-
-    header {
-        padding-top: 5.8vh;
-        padding-bottom: 15vh;
+        top: calc(47% - 22px/2);
+        left: 29%;
+        width: 26px;
+        height: 30px;
     }
 
     .header-btns {
@@ -452,27 +458,36 @@ footer-title-box {
 
     footer {
         position: relative;
-        padding-top: 65%;
+        padding-top: 70%;
         padding-bottom: 1.87%;
         background-image: url('../img/320/footer_mask_320.jpg');
     }
 
     .footer-title {
-        letter-spacing: 2px;
+        font-size: 3.6em;
+        letter-spacing: 3.8px;
     }
 
     .footer-title-box::before {
-        bottom: calc(80% + 48px);
+        bottom: 78.4%;
         left: calc(50% - 38px);
-        width: 72px;
-        padding: 10px 7px 4px;
+        width: 88px;
+        padding-top: 16px;
+        padding-left: 15px;
+        padding-bottom: 16px;
+        padding-right: 15px;
         border-radius: 15px;
     }
 
     .footer-text {
         text-align: center;
-        font-size: 1.4rem;
-        letter-spacing: 1px;
+        font-size: 1.6rem;
+        letter-spacing: 1.3px;
+    }
+
+    footer .header-btns {
+        position: relative;
+        margin-top: -29.5rem; 
     }
 }
 
@@ -602,9 +617,14 @@ footer-title-box {
     }
 
     footer {
-        padding-top: 35%;
+        position: relative;
+        padding-top: 42%;
         padding-bottom: 2.1%;
         background-image: url('../img/768/footer_mask_768.jpg');
+    }
+    
+    .footer-title {
+        letter-spacing: 0.06em;
     }
 
     .footer-text {
@@ -614,11 +634,15 @@ footer-title-box {
     }
 
     .footer-title-box::before {
-        bottom: calc(100% + 58px);
+        bottom: 72.5%;
         left: calc(50% - 68px);
         width: 132px;
         padding: 25px 14px 12px;
         border-radius: 30px;
+    }
+
+    footer .btn {
+        margin-top: 2%;
     }
 }
 
